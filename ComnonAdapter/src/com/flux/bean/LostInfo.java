@@ -1,7 +1,7 @@
 package com.flux.bean;
 
 /**
- * 失物招领信息
+ * 澶辩墿鎷涢淇℃伅
  * @author wangxl
  *
  */

@@ -21,12 +21,12 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		/**
-		 * ×¼±¸Ä¬ÈÏÊı¾İ¼¯
+		 * å‡†å¤‡é»˜è®¤æ•°æ®é›†
 		 */
 		populateData();
 		
 		/**
-		 * ÏÔÊ¾listView
+		 * æ˜¾ç¤ºlistView
 		 */
 		initView();
 	}
@@ -39,10 +39,10 @@ public class MainActivity extends Activity {
 	private void populateData() {
 datas = new ArrayList<LostInfo>();
 		
-		datas.add(new LostInfo("ÃÀÅ®Ò»Ö»", "ÔÚ²Ù³¡¼ñµ½µ½Ò»Ö»ÃÈÃÈßÕÃÃ×Ó", "2015Äê5ÔÂ28ÈÕ 14:10:53", "1"));
-		datas.add(new LostInfo("Ë­µÄºÚÉ«Ç®°ü", "Ò»²Í¼ûµ½µÄ£¬ÔÚ×ùÎ»ÉÏ", "2015Äê5ÔÂ28ÈÕ 14:11:01", "2"));
-		datas.add(new LostInfo("¶ßÀ²AÃÎ", "¶ßÀ²AÃÎ¡¤°éÎÒÍ¬ĞĞ", "2015Äê5ÔÂ28ÈÕ 14:11:06", "3"));
-		datas.add(new LostInfo("¡¶¸ßÊıÉÏ²á¡·", "Ë­µÄ¸ßÊıÊé°¡£¿", "2015Äê5ÔÂ28ÈÕ 14:11:10", "4"));
+		datas.add(new LostInfo("ç¾å¥³ä¸€åª", "åœ¨æ“åœºæ¡åˆ°åˆ°ä¸€åªèŒèŒå“’å¦¹å­", "2015å¹´5æœˆ28æ—¥ 14:10:53", "1"));
+		datas.add(new LostInfo("è°çš„é»‘è‰²é’±åŒ…", "ä¸€é¤è§åˆ°çš„ï¼Œåœ¨åº§ä½ä¸Š", "2015å¹´5æœˆ28æ—¥ 14:11:01", "2"));
+		datas.add(new LostInfo("å“†å•¦Aæ¢¦", "å“†å•¦Aæ¢¦Â·ä¼´æˆ‘åŒè¡Œ", "2015å¹´5æœˆ28æ—¥ 14:11:06", "3"));
+		datas.add(new LostInfo("ã€Šé«˜æ•°ä¸Šå†Œã€‹", "è°çš„é«˜æ•°ä¹¦å•Šï¼Ÿ", "2015å¹´5æœˆ28æ—¥ 14:11:10", "4"));
 	}
 
 }

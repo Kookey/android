@@ -10,21 +10,21 @@ import android.widget.TextView;
 public class ViewHolder {
 
 	/**
-	 * ´æ´¢itemÖĞËùÓÃ¿Ø¼şÒıÓÃµÄÈİÆ÷
+	 * å­˜å‚¨itemä¸­æ‰€ç”¨æ§ä»¶å¼•ç”¨çš„å®¹å™¨
 	 * 
-	 * key ×ÊÔ´ID
-	 * value ¿Ø¼şµÄÒıÓÃ
+	 * key èµ„æºID
+	 * value æ§ä»¶çš„å¼•ç”¨
 	 */
 	private SparseArray<View> views;
 	private View converView;
 	private int positon;
 	
 	/**
-	 * Ë½ÓĞ»¯µÄ¹¹ÔìÆ÷£¬ÓÉÀàÄÚ²¿À´¹ÜÀí¸ÃÊµÀı
-	 * @param context  ÉÏÏÂÎÄ
-	 * @param itemLayoutResId  item²¼¾ÖÎÄ¼şµÄ×ÊÔ´ID
- 	 * @param position         BaseAdpater.getViewµÄ´«Èë²ÎÊı
-	 * @param parent           BaseAdpater.getViewµÄ´«Èë²ÎÊı
+	 * ç§æœ‰åŒ–çš„æ„é€ å™¨ï¼Œç”±ç±»å†…éƒ¨æ¥ç®¡ç†è¯¥å®ä¾‹
+	 * @param context  ä¸Šä¸‹æ–‡
+	 * @param itemLayoutResId  itemå¸ƒå±€æ–‡ä»¶çš„èµ„æºID
+ 	 * @param position         BaseAdpater.getViewçš„ä¼ å…¥å‚æ•°
+	 * @param parent           BaseAdpater.getViewçš„ä¼ å…¥å‚æ•°
 	 */
 	private ViewHolder(Context context,int itemLayoutResId,int position,ViewGroup parent){
 		this.views = new SparseArray<View>();
@@ -34,14 +34,14 @@ public class ViewHolder {
 	}
 	
 	/**
-	 * µÃµ½Ò»¸öViewHolder¶ÔÏó
+	 * å¾—åˆ°ä¸€ä¸ªViewHolderå¯¹è±¡
 	 * 
-	 * @param context              ÉÏÏÂÎÄ¶ÔÏó
-	 * @param itemLayoutResId      item²¼¾ÖÎÄ¼şµÄ×ÊÔ´Id
-	 * @param position             BaseAdpater.getViewµÄ´«Èë²ÎÊı          
-	 * @param converView           BaseAdpater.getViewµÄ´«Èë²ÎÊı
-	 * @param parent               BaseAdpater.getViewµÄ´«Èë²ÎÊı
-	 * @return                     Ò»¸öViewHolder¶ÔÏó
+	 * @param context              ä¸Šä¸‹æ–‡å¯¹è±¡
+	 * @param itemLayoutResId      itemå¸ƒå±€æ–‡ä»¶çš„èµ„æºId
+	 * @param position             BaseAdpater.getViewçš„ä¼ å…¥å‚æ•°          
+	 * @param converView           BaseAdpater.getViewçš„ä¼ å…¥å‚æ•°
+	 * @param parent               BaseAdpater.getViewçš„ä¼ å…¥å‚æ•°
+	 * @return                     ä¸€ä¸ªViewHolderå¯¹è±¡
 	 */
 	public static ViewHolder getViewHolder(Context context,int itemLayoutResId,int position,View converView,ViewGroup parent){
 		
@@ -58,10 +58,10 @@ public class ViewHolder {
 		return this.converView;
 	}
 	/**
-	 * [ºËĞÄ²¿·Ö]
-	 * ¸ù¾İ¿Ø¼şµÄ×ÊÔ´id£¬»ñÈ¡¿Ø¼ş
-	 * @param viewResId   ¿Ø¼şµÄ×ÊÔ´Id
-	 * @return            ¿Ø¼şµÄÒıÓÃ
+	 * [æ ¸å¿ƒéƒ¨åˆ†]
+	 * æ ¹æ®æ§ä»¶çš„èµ„æºidï¼Œè·å–æ§ä»¶
+	 * @param viewResId   æ§ä»¶çš„èµ„æºId
+	 * @return            æ§ä»¶çš„å¼•ç”¨
 	 */
 	@SuppressWarnings("unchecked")
 	public <T extends View> T getView(int viewResId){

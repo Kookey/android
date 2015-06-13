@@ -21,5 +21,6 @@ public class MyAdapter extends CommonAdapter<LostInfo> {
 		.setText(R.id.tv_desc, item.getDesc())
 		.setText(R.id.tv_time, item.getTime())
 		.setText(R.id.tv_phone, item.getPhone());
+		
 	}
 }

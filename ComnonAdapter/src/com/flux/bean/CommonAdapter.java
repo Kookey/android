@@ -10,17 +10,17 @@ import android.widget.BaseAdapter;
 public abstract class CommonAdapter<T> extends BaseAdapter {
 
 	/**
-	 * Êı¾İÔ´
+	 * æ•°æ®æº
 	 */
 	protected List<T> beans;
 	
 	/**
-	 * ÉÏÏÂÎÄ¶ÔÏó
+	 * ä¸Šä¸‹æ–‡å¯¹è±¡
 	 */
 	protected Context context;
 	
 	/**
-	 * item²¼¾ÖÎÄ¼ş×ÊÔ´Id
+	 * itemå¸ƒå±€æ–‡ä»¶èµ„æºId
 	 */
 	protected int itemLayoutResId;
 	
