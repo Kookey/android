@@ -12,6 +12,7 @@ public class LostInfo {
 	private String time;
 	private String phone;
 	
+	
 	public LostInfo() {
 		super();
 	}

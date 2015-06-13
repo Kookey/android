@@ -42,7 +42,7 @@ public abstract class CommonAdapter<T> extends BaseAdapter {
 	}
 
 	@Override
-	public Object getItem(int position) {
+	public T getItem(int position) {
 		return beans.get(position);
 	}
 
@@ -50,7 +50,7 @@ public abstract class CommonAdapter<T> extends BaseAdapter {
 	public long getItemId(int position) {
 		return position;
 	}
-
+	
 	@Override
 	public View getView(int position, View converView, ViewGroup parent) {
 		ViewHolder viewHolder = ViewHolder.getViewHolder(context, itemLayoutResId, position, converView, parent);
@@ -58,5 +58,5 @@ public abstract class CommonAdapter<T> extends BaseAdapter {
 		return viewHolder.getConverView();
 	}
 
-	protected abstract void convert(ViewHolder viewHolder, Object item);
+	protected abstract void convert(ViewHolder viewHolder, T item);
 }

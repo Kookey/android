@@ -70,6 +70,7 @@ public class ViewHolder {
 			view = converView.findViewById(viewResId);
 			views.put(viewResId, view);
 		}
+		
 		return (T)view;
 	}
 	
