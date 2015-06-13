@@ -14,7 +14,14 @@
         android:textColor="#444444"
         android:textSize="16sp"
         />
-    
+    <CheckBox 
+        android:id="@+id/cb"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
 	<TextView 
 	    android:id="@+id/tv_desc"
 	    android:layout_width="match_parent"
