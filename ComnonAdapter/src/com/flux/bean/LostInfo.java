@@ -7,6 +7,10 @@ package com.flux.bean;
  */
 public class LostInfo {
 
+	public static final int TYPE_CHECKED   = 1;
+	public static final int TYPE_NOCHECKED = 0;
+	private int type;
+	
 	private String title;
 	private String desc;
 	private String time;
@@ -49,6 +53,13 @@ public class LostInfo {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	
+
+	public int getType() {
+		return type;
+	}
+
+	public void setType(int type) {
+		this.type = type;
+	}
 	
 }

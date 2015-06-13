@@ -57,6 +57,11 @@ public class ViewHolder {
 	public View getConverView(){
 		return this.converView;
 	}
+	
+	public int getPositon() {
+		return positon;
+	}
+
 	/**
 	 * [核心部分]
 	 * 根据控件的资源id，获取控件
